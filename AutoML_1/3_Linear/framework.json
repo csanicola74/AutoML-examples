@@ -1,0 +1,216 @@
+{
+    "uid": "656b48d7-e740-4676-93a2-bc03d530b9ec",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        8.701259182287396,
+                        0.4753778112959433,
+                        1.0622368774189896,
+                        17.00484242946969,
+                        54.42486881197081,
+                        0.5091414937936588,
+                        23.45119946912042,
+                        1.0834384098799277,
+                        0.6026513697304445,
+                        1.033583338667638,
+                        0.6052560951080987
+                    ],
+                    "mean": [
+                        54.1578947368421,
+                        0.6549707602339181,
+                        0.9824561403508771,
+                        130.26315789473685,
+                        248.14619883040936,
+                        0.5497076023391813,
+                        149.64912280701753,
+                        0.9345029239766083,
+                        1.4385964912280702,
+                        0.7426900584795322,
+                        2.345029239766082
+                    ],
+                    "var": [
+                        75.71191135734072,
+                        0.22598406347252148,
+                        1.1283471837488457,
+                        289.16466605109264,
+                        2962.0663452002327,
+                        0.25922506070243834,
+                        549.9587565404739,
+                        1.1738387880031462,
+                        0.36318867343798095,
+                        1.0682945179713415,
+                        0.36633494066550387
+                    ],
+                    "n_samples_seen": 171,
+                    "n_features_in": 11,
+                    "columns": [
+                        "age",
+                        "sex",
+                        "cp",
+                        "trtbps",
+                        "chol",
+                        "restecg",
+                        "thalachh",
+                        "oldpeak",
+                        "slp",
+                        "caa",
+                        "thall"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "age": [
+                        "scale_normal"
+                    ],
+                    "sex": [
+                        "scale_normal"
+                    ],
+                    "cp": [
+                        "scale_normal"
+                    ],
+                    "trtbps": [
+                        "scale_normal"
+                    ],
+                    "chol": [
+                        "scale_normal"
+                    ],
+                    "restecg": [
+                        "scale_normal"
+                    ],
+                    "thalachh": [
+                        "scale_normal"
+                    ],
+                    "oldpeak": [
+                        "scale_normal"
+                    ],
+                    "slp": [
+                        "scale_normal"
+                    ],
+                    "caa": [
+                        "scale_normal"
+                    ],
+                    "thall": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Logistic Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "7802fb10-28dc-4da4-bade-fffbd148ab63",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "num_class": 4,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "age": [
+                    "scale_normal"
+                ],
+                "sex": [
+                    "scale_normal"
+                ],
+                "cp": [
+                    "scale_normal"
+                ],
+                "trtbps": [
+                    "scale_normal"
+                ],
+                "chol": [
+                    "scale_normal"
+                ],
+                "restecg": [
+                    "scale_normal"
+                ],
+                "thalachh": [
+                    "scale_normal"
+                ],
+                "oldpeak": [
+                    "scale_normal"
+                ],
+                "slp": [
+                    "scale_normal"
+                ],
+                "caa": [
+                    "scale_normal"
+                ],
+                "thall": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1/X.data",
+            "y_path": "AutoML_1/y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "num_class": 4,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear/learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.3242747850994602,
+    "train_time": 9.333761930465698,
+    "is_stacked": false
+}

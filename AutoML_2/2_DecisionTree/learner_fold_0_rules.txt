@@ -1,0 +1,16 @@
+if (age <= 61.5) and (exng <= 0.5) and (thall > 1.5) then response: 238.33 | based on 109 samples
+
+if (age <= 61.5) and (exng > 0.5) and (caa <= 1.5) then response: 246.51 | based on 49 samples
+
+if (age > 61.5) and (thalachh <= 150.5) and (oldpeak <= 3.45) then response: 245.774 | based on 31 samples
+
+if (age <= 61.5) and (exng > 0.5) and (caa > 1.5) then response: 285.727 | based on 11 samples
+
+if (age > 61.5) and (thalachh > 150.5) and (oldpeak <= 0.7) then response: 269.7 | based on 10 samples
+
+if (age > 61.5) and (thalachh > 150.5) and (oldpeak > 0.7) then response: 353.778 | based on 9 samples
+
+if (age <= 61.5) and (exng <= 0.5) and (thall <= 1.5) then response: 198.5 | based on 6 samples
+
+if (age > 61.5) and (thalachh <= 150.5) and (oldpeak > 3.45) then response: 175.5 | based on 2 samples
+

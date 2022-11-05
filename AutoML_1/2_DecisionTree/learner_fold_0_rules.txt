@@ -1,0 +1,8 @@
+if (cp <= 0.5) then class: 0 (proba: 100.0%) | based on 83 samples
+
+if (cp > 0.5) and (cp > 1.5) and (cp <= 2.5) then class: 2 (proba: 100.0%) | based on 50 samples
+
+if (cp > 0.5) and (cp <= 1.5) then class: 1 (proba: 100.0%) | based on 23 samples
+
+if (cp > 0.5) and (cp > 1.5) and (cp > 2.5) then class: 3 (proba: 100.0%) | based on 15 samples
+

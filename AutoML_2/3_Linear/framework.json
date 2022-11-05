@@ -1,0 +1,224 @@
+{
+    "uid": "8e267a58-dcab-4636-8564-b0c986e9d3bf",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        8.78663267343612,
+                        0.46537841925089896,
+                        1.0419968975923928,
+                        17.138662204635644,
+                        0.5253938860220467,
+                        23.412101398173547,
+                        1.1964512788394577,
+                        0.6187820193627623,
+                        0.9521738804873275,
+                        0.6349422204875975,
+                        0.49824548072594504
+                    ],
+                    "mean": [
+                        54.72246696035242,
+                        0.6828193832599119,
+                        0.9515418502202643,
+                        131.95594713656388,
+                        0.5198237885462555,
+                        148.59471365638765,
+                        1.1176211453744493,
+                        1.3700440528634361,
+                        0.6475770925110133,
+                        2.2775330396475773,
+                        0.5418502202643172
+                    ],
+                    "var": [
+                        77.20491373789517,
+                        0.21657707310446547,
+                        1.0857575345921715,
+                        293.7337421646063,
+                        0.27603873546934743,
+                        548.1264918783597,
+                        1.4314956626365738,
+                        0.382891187486658,
+                        0.9066350986822954,
+                        0.4031516233577209,
+                        0.24824855906382806
+                    ],
+                    "n_samples_seen": 227,
+                    "n_features_in": 11,
+                    "columns": [
+                        "age",
+                        "sex",
+                        "cp",
+                        "trtbps",
+                        "restecg",
+                        "thalachh",
+                        "oldpeak",
+                        "slp",
+                        "caa",
+                        "thall",
+                        "output"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    55.036037620257716
+                ],
+                "mean": [
+                    247.76211453744494
+                ],
+                "var": [
+                    3028.965436938423
+                ],
+                "n_samples_seen": 227,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "age": [
+                        "scale_normal"
+                    ],
+                    "sex": [
+                        "scale_normal"
+                    ],
+                    "cp": [
+                        "scale_normal"
+                    ],
+                    "trtbps": [
+                        "scale_normal"
+                    ],
+                    "restecg": [
+                        "scale_normal"
+                    ],
+                    "thalachh": [
+                        "scale_normal"
+                    ],
+                    "oldpeak": [
+                        "scale_normal"
+                    ],
+                    "slp": [
+                        "scale_normal"
+                    ],
+                    "caa": [
+                        "scale_normal"
+                    ],
+                    "thall": [
+                        "scale_normal"
+                    ],
+                    "output": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Linear Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "8418df21-a916-41bd-b5e0-bc7d7f22798f",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "age": [
+                    "scale_normal"
+                ],
+                "sex": [
+                    "scale_normal"
+                ],
+                "cp": [
+                    "scale_normal"
+                ],
+                "trtbps": [
+                    "scale_normal"
+                ],
+                "restecg": [
+                    "scale_normal"
+                ],
+                "thalachh": [
+                    "scale_normal"
+                ],
+                "oldpeak": [
+                    "scale_normal"
+                ],
+                "slp": [
+                    "scale_normal"
+                ],
+                "caa": [
+                    "scale_normal"
+                ],
+                "thall": [
+                    "scale_normal"
+                ],
+                "output": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear/learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 40.09401732865912,
+    "train_time": 3.1038999557495117,
+    "is_stacked": false
+}

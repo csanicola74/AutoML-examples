@@ -1,0 +1,14 @@
+if (output > 0.5) and (oldpeak <= 1.7) and (trtbps <= 135.5) then class: 1 (proba: 40.35%) | based on 57 samples
+
+if (output <= 0.5) and (age > 39.0) and (exng > 0.5) then class: 0 (proba: 93.62%) | based on 47 samples
+
+if (output <= 0.5) and (age > 39.0) and (exng <= 0.5) then class: 0 (proba: 57.58%) | based on 33 samples
+
+if (output > 0.5) and (oldpeak <= 1.7) and (trtbps > 135.5) then class: 2 (proba: 64.0%) | based on 25 samples
+
+if (output > 0.5) and (oldpeak > 1.7) and (age > 53.5) then class: 3 (proba: 100.0%) | based on 6 samples
+
+if (output > 0.5) and (oldpeak > 1.7) and (age <= 53.5) then class: 2 (proba: 100.0%) | based on 2 samples
+
+if (output <= 0.5) and (age <= 39.0) then class: 3 (proba: 100.0%) | based on 2 samples
+

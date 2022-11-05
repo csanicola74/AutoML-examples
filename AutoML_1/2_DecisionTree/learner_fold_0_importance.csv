@@ -1,0 +1,14 @@
+feature,mean_importance
+age,0.0
+sex,0.0
+trtbps,0.0
+chol,0.0
+fbs,0.0
+restecg,0.0
+thalachh,0.0
+exng,0.0
+oldpeak,0.0
+slp,0.0
+caa,0.0
+thall,0.0
+cp,10.782450127192806

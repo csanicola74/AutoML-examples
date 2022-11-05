@@ -1,0 +1,14 @@
+feature,shap_importance
+output,0.555603800563443
+oldpeak,0.20351379585748663
+exng,0.16487172785420912
+trtbps,0.14860267361838309
+age,0.11197165105135307
+sex,0.0
+chol,0.0
+fbs,0.0
+restecg,0.0
+thalachh,0.0
+slp,0.0
+caa,0.0
+thall,0.0
